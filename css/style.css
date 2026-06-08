@@ -1,0 +1,295 @@
+/* Reset & Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #2c5f2d, #1e3f20);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Navigasi */
+.nav {
+    background: #34495e;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    background: #2c5f2d;
+}
+
+/* Konten */
+.content {
+    padding: 30px;
+}
+
+.content h3 {
+    margin-bottom: 20px;
+    color: #2c5f2d;
+    border-bottom: 2px solid #2c5f2d;
+    padding-bottom: 10px;
+}
+
+/* Tabel Buku */
+.buku-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.buku-table th {
+    background: #2c5f2d;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.buku-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.buku-table tr:hover {
+    background: #f5f5f5;
+}
+
+.buku-table .stok {
+    text-align: center;
+    font-weight: bold;
+}
+
+.buku-table .aksi {
+    text-align: center;
+}
+
+.buku-table .deskripsi {
+    background: #f9f9f9;
+    font-size: 13px;
+    color: #666;
+    padding: 8px 12px;
+}
+
+/* Tombol Aksi */
+.btn-edit, .btn-hapus {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-edit {
+    background: #3498db;
+    color: white;
+}
+
+.btn-hapus {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-edit:hover, .btn-hapus:hover {
+    opacity: 0.8;
+}
+
+/* Form */
+.buku-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2c5f2d;
+    outline: none;
+}
+
+/* Tombol Form */
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-simpan, .btn-batal {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-simpan {
+    background: #2c5f2d;
+    color: white;
+}
+
+.btn-simpan:hover {
+    background: #1e3f20;
+}
+
+.btn-batal {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-batal:hover {
+    background: #7f8c8d;
+}
+
+/* Alert */
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+.info {
+    background: #e7f3ff;
+    color: #004085;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-total {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .buku-table {
+        font-size: 12px;
+    }
+    
+    .buku-table th,
+    .buku-table td {
+        padding: 8px 5px;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+}
